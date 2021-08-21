@@ -1,0 +1,112 @@
+*{
+    /* padding: 0;
+    margin: 0; */
+    box-sizing: content-box;
+}
+body{
+    background-color: rgb(236, 237, 238);
+    padding: 20vh ;
+    -ms-grid-column-align: center;
+    Font-size: 15px;
+}
+    
+.page-container{ 
+    display: flex;
+    padding: 60px;
+    width: 950px;
+    -ms-grid-column-align: center;
+    background-color:hsla(0, 0%, 100%, 0.75);
+}
+
+.par {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color:hsla(0, 0%, 100%, 0.75);
+    padding: 70px;
+    width: 300px;
+}
+
+.menu {
+    background-color:hsl(184, 100%, 22%) ;
+    color:hsla(0, 0%, 100%, 0.75);
+    padding: 70px;
+    width: 300px;
+}
+
+.me {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color:hsla(0, 0%, 100%, 0.75);
+    padding: 65px;
+    width: 300px;
+}
+p {
+    font-weight: 400;
+    font-family: "Lexend Deca";
+    }
+h1 {
+    color: hsl(0, 0%, 95%);
+    font-weight: 700;
+    font-family: "Big Shoulders Display";
+}
+a {
+    background-color: aliceblue;
+    text-decoration: none;
+}
+a:link {
+    padding: 6px 15px;
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 30px;
+
+}
+.par a{
+    color:  hsl(31, 77%, 52%);
+    background-color: hsl(0, 0%, 95%);
+
+}
+.menu a{
+    color:hsl(184, 100%, 22%);
+    background-color: hsl(0, 0%, 95%);
+
+}
+.me a{
+    color: hsl(179, 100%, 13%);
+    background-color: hsl(0, 0%, 95%);
+}
+.par a:hover{
+     background-color: hsl(31, 77%, 52%);
+     color: hsl(0, 0%, 95%);
+}
+.menu a:hover{
+    background-color:hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
+.me a:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
+/*mobile view*/
+@media screen and (max-width: 375px){
+
+    .page-container{ 
+        display: table-column; 
+        width: 60%;
+        padding: 0;
+        margin: 0;  
+    }  
+    .par {
+
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px
+        border;border-bottom-left-radius: 0;
+        padding: 50px 30px ;
+    }
+    .me {
+        border-bottom-right-radius:10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;;
+        padding: 50px 30px ;
+    }
+}
