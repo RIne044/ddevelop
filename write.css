@@ -89,24 +89,31 @@ a:link {
 }
 /*mobile view*/
 @media screen and (max-width: 375px){
+    body{
+        height: 100vh;
+        width: 50vw;
+    }
 
     .page-container{ 
-        display: table-column; 
-        width: 60%;
-        padding: 0;
-        margin: 0;  
-    }  
+        display: flex; 
+        flex-direction: column;
+        width: 80vw;
+        align-items: center;
+    }
     .par {
-
         border-top-left-radius: 10px;
-        border-top-right-radius: 10px
-        border;border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
         padding: 50px 30px ;
     }
+    .menu{
+        padding: 50px 30px ;
+    }
+
     .me {
         border-bottom-right-radius:10px;
         border-bottom-left-radius: 10px;
-        border-top-right-radius: 0;;
+        border-top-right-radius: 0;
         padding: 50px 30px ;
     }
 }
